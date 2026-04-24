@@ -1,48 +1,8 @@
 * {
     box-sizing: border-box;
 }
-hrml {
-    font-size: 1.25em; /* 20 px на большинстве экранов */
-}
 
-header {
-    position: static; /* по умолчанию */
-    width: 100%;
-    height: 70px;
-    margin: 0;
-    top: 0;
-    background-color: black;
-    text-align: center;
-}
-
-header img {
-    position: relative;
-    display: block;
-    margin: auto;
-    height: 60px;
-}
-
-main {
-
-}
-h1 {
-    font-size: 2rem;
-    line-height: 1.35;
-    width: auto;
-    margin: 20px 20% 15px;
-    font-weight: 700;
-    color: orange;
-    background-color: yellow;
-}
-
-main img {
-    position: relative;
-    display: block;
-        width: 300px;
-        margin: auto;
-    }
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
@@ -51,7 +11,11 @@ body {
     background-color: whitesmoke;
 }
 
-
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
 
 a {
     color: deeppink;
@@ -61,4 +25,3 @@ a {
 a:hover {
     color: darkmagenta;
 }
-
