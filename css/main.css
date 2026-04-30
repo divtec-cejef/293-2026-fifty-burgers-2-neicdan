@@ -1,3 +1,5 @@
+/* Palette  des couleur: https://coolors.co/e8a062-823922-00a24b-fdc032-ffffff-000000*/
+
 * {
     box-sizing: border-box;
 }
@@ -7,12 +9,12 @@ header {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    color: darkblue;
-    background-color: whitesmoke;
+    font-size: 120%; /* 1 rem = 120% = 19,2px */
+    line-height: 1.4; /* Растояние между линиями = 26.88пкс*/
+    color: #000000;
+    background-color: #ffffff;
 }
 
 img {
@@ -22,10 +24,95 @@ img {
 }
 
 a {
-    color: deeppink;
+    color: #00A24B;
     text-decoration: none;
 }
 
 a:hover {
-    color: darkmagenta;
+    color: #E8A062;
+}
+
+h1,
+h2 {
+font-family: Georgia, serif;
+}
+
+h1 {
+    color: #FDC032;
+    font-size: 4rem;
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 60px 0 20px;
+
+}
+
+p {
+    line-height: 1.5;
+}
+
+/********** Entête du site ************/
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+header .logo {
+    max-height: 160px;
+}
+
+/********** Contenu principal ************/
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+main .intro {
+    font-size: 1.3rem;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+main .ingredients li {
+    background-color: #E8A062;
+    color : #ffffff;
+    padding: 10px 40px;
+}
+
+main .ingredients li:nth-child(even) {
+    background-color: #823922;
+    border-top: #FDC032 solid 5px;
+    border-bottom: #00A24B solid 10px; /* зелёный */
+}
+
+
+main .ingredients li:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+main .ingredients li:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+}
+
+/********** Pied de page du site ************/
+footer {
+    background-color: #823922;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto 40px;
+    max-width: 400px;
+    min-height: 50px;
+    border-top: #E8A062 solid 30px;
+    border-bottom: #E8A062 solid 30px;
+    border-radius: 30px;
 }
